@@ -81,7 +81,7 @@ pub fn main() !void {
 
     std.debug.print("HYBRID STATE BEFORE WORK {d}\n", .{hy_state});
     const hy_t1 = time.microTimestamp();
-    ecs.work();
+    hbr.work();
     const hy_t2 = time.microTimestamp();
     std.debug.print("HYBRID STATE AFTER WORK {d}\n", .{hy_state});
     std.debug.print("HYBRID DELTA {d}\n", .{hy_t2 - hy_t1});
